@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POYECTO FINAL DE HTML</title>
+    <link rel="shortcut icon" href="./twitter.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PROYECTO FINAL DEL CURSO DE HTML</h1>
+      <nav>
+        <ul>
+          <li><a href="/proyectofinal/index.html">Inicio</a></li>
+          <li><a href="/proyectofinal/preferencias.html">Preferencias</a></li>
+          <li><a href="/proyectofinal/audiovisuales.html">Audivisuales</a></li>
+          <li>
+            <a class="active" href="/proyectofinal/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 style="margin: 15px">Formulario de contactos</h2>
+    <hr />
+
+    <div class="contenedor-formulario">
+      <form action="">
+        <label for="nombre">Nombre: </label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Ingrese el nombre"
+          maxlength="10"
+          min="1"
+          required
+        />
+        <label for="correo">Correo:</label>
+        <input
+          type="email"
+          name="correo"
+          placeholder="ingrese su correo"
+          required
+        />
+        <label for="opnion">Ponga su opnion</label>
+        <textarea name="opnion" id="opnion" cols="20" rows="10"></textarea>
+        <label for="date">Fecha</label>
+        <input type="date" name="date" id="date" />
+        <select name="token" id="token">
+          <option value="token1">token1</option>
+          <option value="token2">token2</option>
+          <option value="token3">token3</option>
+          <option value="token4">token4</option>
+        </select>
+        <label for="opciones">Escoja:</label>
+        <input type="checkbox" /> Zapatos <input type="checkbox" /> rameras
+        <input type="checkbox" /> Tunas <input type="checkbox" /> camiseta
+        <input type="checkbox" /> Zamarro <br /><br />
+        <label for="radio">Radio :</label>
+        <input type="radio" />1 <input type="radio" />2 <input type="radio" />3
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>derechos reservados &copy; 2023</p>
+    </footer>
+  </body>
+</html>
